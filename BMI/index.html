@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+
+        function BMIindex(height, weight) {
+            var height = height / 100;
+            var BMI = weight / (height * height);
+
+
+            console.log(BMI.toFixed(2));
+
+
+            if ((BMI > 18.5) && (BMI < 24.9)) {
+                document.writeln('</br>'+'Your BMI is' + BMI.toFixed(2) + 'which mean is normal'+'</br>')
+
+            } else if ((BMI > 25) && (BMI < 29.9)) {
+                document.writeln('</br>'+'Your BMI is' + BMI.toFixed(2) + 'which mean is overweight'+'</br>')
+
+            } else if (BMI > 30) {
+                document.writeln('</br>'+'Your BMI is' + BMI.toFixed(2) + 'which mean you need to lose some weight'+'</br>')
+
+            }
+        };
+
+
+        
+
+        BMIindex(180, 77);
+        BMIindex(180, 77);
+        BMIindex(200, 77);
+        BMIindex(150, 77);
+        BMIindex(159, 77);
+        BMIindex(150, 77);
+        BMIindex(150, 77);
+        BMIindex(150, 77);
+        BMIindex(159, 70);
+        BMIindex(170, 900);
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

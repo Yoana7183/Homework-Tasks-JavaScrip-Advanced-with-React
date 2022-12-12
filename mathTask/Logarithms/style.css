@@ -1,0 +1,18 @@
+*{
+    background-color: rgb(242, 239, 235);
+
+}
+#input{
+display: grid;
+grid-template-columns:auto;
+width: 40px;
+
+}
+#valueA,#valueX,#valueLoga,#calc{
+    width: 220px;
+    height: 40px;
+}
+#calc{
+    margin-left: 5px;
+    background-color: rgb(213, 213, 235);
+}

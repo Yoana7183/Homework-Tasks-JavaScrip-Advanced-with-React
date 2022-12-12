@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of objects example & HW</title>
+</head>
+
+<body>
+
+
+
+    <h2>🍺 </h2>
+
+
+
+
+    <script>
+
+
+        // масив от обекти представящи данни за различни марки бири:
+        var beers = [
+            { name: "Ариана", color: "светло", prices: [1.3, 2, 2.5], town: "София" },
+            { name: "Ариана", color: "тъмно", prices: [1.4, 2.2, 2.8], town: "София" },
+            { name: "Каменица", color: "светло", prices: [1.5, 2.5, 3], town: "Пловдив" },
+            { name: "Загорка", color: "светло", prices: [2, 3, 3.6], town: "Стара Загора" },
+        ];
+
+
+
+
+        var allPrices = [lowerPrice];
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // ПРИМЕР: изписване на имената и цвета на всички бири:
+        for (i = 0; i < beers.length; i++) {
+
+            var beersPrices = beers[i].prices[2];
+            var lowerPrice = beers[i].prices[2];
+            var currentPrice = 0;
+
+            allPrices.push(lowerPrice)
+
+            for (j = 0; j > allPrices.length; j++) {
+
+                //   console.log(allPrices[j]);
+
+                if (currentPrice > allPrices[j]) {
+                    allPrices[j] = currentPrice
+
+                    console.log(currentPrice);
+                }
+
+
+            }
+
+
+
+
+        }
+
+
+
+
+        // if (lowerPrice<beers[i].prices[2])
+        //         lowerPrice=beers[i].prices[2];
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ЗАДАЧА: намиране на най-евтината бира по 3-та цена:
+// да се изпише в конзолата името, цвета и цената на най-евтината бира, 
+//като използваме за сравнението 3-тата цена в масива prices:
+
+
+// очакван изход:
+// "Ариана, светло" - 2.4
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Object basics: Task 2</title>
+    <style>
+        p {
+            color: purple;
+            margin: 0.5em 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+</body>
+<script>
+//     Object basics 2
+
+// In our next task, we want you to have a go at creating your own object literal to represent one of your favorite bands. The required properties are:
+
+//     name: A string representing the band name.
+//     nationality: A string representing the country the band comes from.
+//     genre: What type of music the band plays.
+//     members: A number representing the number of members the band has.
+//     formed: A number representing the year the band formed.
+//     split: A number representing the year the band split up, or false if they are still together.
+//     albums: An array representing the albums released by the band. Each array item should be an object containing the following members:
+//         name: A string representing the name of the album.
+//         released: A number representing the year the album was released.
+
+// Include at least two albums in the albums array.
+
+// Once you've done this, you should then write a string to the variable bandInfo, which will contain a small biography detailing their name, nationality, years active, and style, and the title and release date of their first album.
+    
+
+    
+  let album = {
+        name : 'Nike',
+        nationality:'Columbia',
+        genre:'guitars',
+        members:10,
+        split: 1999,
+        albums : [
+            name=['album1','album2'],
+            released=[2000,2003]
+
+        ]
+    }
+
+    // Add your code here
+    let bandInfo ='hkjhkk   '+ album.albums[1][1];
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+</script>
+
+</html>

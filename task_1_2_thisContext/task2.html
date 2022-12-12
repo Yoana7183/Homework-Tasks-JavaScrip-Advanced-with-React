@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thisInEventListener </title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <button class="btn-tick">Tick</button>
+    <p class="output"></p>
+    <script>
+        // Do not change the object
+        const counter = {
+            currentCount: 0,
+            tick() {
+                this.currentCount += 1;
+                console.log(this.currentCount);
+            }
+        }
+
+        const btnTick = document.querySelector('.btn-tick');
+        const output = document.querySelector('.output');
+
+        // fix the problem, so that we see numbers, instead of NaNs
+        btnTick.addEventListener('click',function counterdown(){
+            counter.tick();
+        })
+
+        // Fix the problem in countdown function, so that we see in console the numbers 1,2,3 instead of NaN
+    </script>
+</body>
+
+</html>
